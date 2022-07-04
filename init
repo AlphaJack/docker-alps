@@ -1,0 +1,14 @@
+#!/bin/sh
+
+ARGS="${@}"
+
+if [ "${ALPS_PARAMETERS+isSet}" ]; then
+ # use environmental variable
+ /alps $ALPS_PARAMETERS
+elif [ -n "$ARGS" ]; then
+ # use arguments
+ /alps $ARGS
+else
+ # fallback to default server
+ /alps "migadu.com"
+fi
