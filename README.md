@@ -6,7 +6,7 @@ Unofficial Dockerfile for [alps](https://git.sr.ht/~migadu/alps), a simple and e
 
 ## Usage
 
-To use the image, pull it from [DockerHub](https://hub.docker.com/alphajack/alps) and create a container that passes the `ALPS_PARAMETERS` environmental variable with alps options and server URLs.
+To use the image, pull it from [DockerHub](https://hub.docker.com/r/alphajack/alps) and create a container that passes the `ALPS_PARAMETERS` environmental variable with alps options and server URLs.
 
 Example docker-compose file:
 
