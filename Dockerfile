@@ -19,4 +19,6 @@ LABEL org.opencontainers.image.source=https://github.com/AlphaJack/docker-alps
 
 EXPOSE 1323
 
+HEALTHCHECK CMD wget --spider http://127.0.0.1:1323/
+
 ENTRYPOINT ["/init"]
